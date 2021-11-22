@@ -1,0 +1,170 @@
+#aviso {
+    background-color: #AD3335 !important;
+}
+
+#bus-logo {
+    padding: 10px;
+    margin-left: 20px;
+    width: 120px !important;
+}
+
+.sb-sidenav-menu {
+    background: white;
+    border-right: 1px solid #D2D3D5;
+}
+
+.nav-link .sb-nav-link-icon {
+    color: gray !important;
+}
+
+.nav-link {
+    color: gray !important;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #1C81D9 !important;
+    transform: translateY(-2px) translateX(2px);
+    font-size: 22px;
+}
+
+.sb-topnav {
+    background-color: #1C81D9 !important;
+}
+
+.sb-sidenav-footer {
+    background-color: white !important;
+    height: 100px;
+}
+
+#logout-button {
+    position: absolute;
+    bottom: 0px !important;
+}
+
+#logo-conglomerado {
+    width: 35px;
+    border-radius: 100%;
+}
+
+#conglomerado {
+    margin-left: auto !important;
+}
+
+#layoutSidenav_content {
+    padding-left: 265px !important;
+    top: 56px;
+}
+
+#img-card {
+    width: 200px;
+}
+
+#congestionamento {
+    background-color: rgb(255, 194, 28);
+}
+
+.card {
+    background: #fff;
+    display: inline-block;
+}
+
+.image {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.content {
+    float: left;
+    height: 120px;
+    width: 75%;
+    padding: 5px;
+    display: inline;
+}
+
+.content h4 {
+    margin: 5px 0;
+}
+
+.card-text {
+    margin-left: 20px;
+    margin-bottom: 15px !important;
+}
+
+#icon-size {
+    margin-top: 10px !important;
+    margin-left: 10px;
+    color: #6b6b6b !important;
+}
+
+.warning:hover {
+    background-color: rgb(255, 208, 163);
+}
+
+.ok:hover {
+    background-color: #d7edff;
+}
+
+a {
+    color: #6b6b6b;
+}
+
+#box:hover {
+    transform: translateY(-2px) translateX(2px);
+    border: #1C81D9 0.2px solid;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#aplicacao {
+    width: auto;
+}
+
+#box {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 18%) !important;
+}
+
+#user-box {
+    width: 100% !important;
+}
+
+.form__group {
+    position: relative;
+}
+
+.form__field {
+    font-family: inherit;
+    border: 0 white;
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.form__field:placeholder {
+    color: transparent;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: white;
+}
+
+.form__field:focus-visible {
+    border: 0.2px rgba(255, 255, 255, 0.555) solid !important;
+}
+
+
+/* reset input */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}

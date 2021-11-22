@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - SB Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="/static/assets/css/styles.css" rel="stylesheet" />
+    <link href="/static/assets/css/index.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b494f02d5f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+    {% include 'navbar.html' %}
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            {% include 'sidebar.html' %}
+        </div>
+        <div id="layoutSidenav_content">
+            <!-- title -->
+            <div class="row page-titles">
+                <div class="col-md-5 col-8 align-self-center">
+                    <h1 id="page-title">Bem vindo</h1>
+                    <br>
+                </div>
+            </div>
+
+            <!-- app -->
+            <div class="card mb-3" id="rota-box">
+                <div class="card-body">
+                    <h5 class="card-title">Rotas em andamento</h5>
+                    <br>
+                    <div class="col-md-5" id="itens">
+                        <a href="">
+                            <div class="card ok" id="box">
+                                <img src="/static/assets/img/fatec-id.jpg" class="image pull-left" alt="">
+                                <div class="content pull-left">
+                                    <h4>
+                                        Fatec Indaiatuba
+                                    </h4> <br>
+                                    <p style="color: gray;">Trajeto ida</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="col-md-5" id="itens">
+                        <a href="">
+                            <div class="card ok" id="box">
+                                <img src="/static/assets/img/etec.jpg" class="image pull-left" alt="">
+                                <div class="content pull-left">
+                                    <h4>
+                                        Etec Indaiatuba
+                                    </h4> <br>
+                                    <p style="color: gray;">Trajeto volta</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-text"><small class="text-muted">Última atualização 3 mins atrás</small></p>
+            </div>
+            <br>
+            <div class="card mb-3" id="rota-box">
+                <div class="card-body">
+                    <h5 class="card-title">Avisos</h5>
+                    <br>
+                    <div class="col-md-5" id="itens">
+                        <a href="">
+                            <div class="card warning" id="box">
+                                <div class="image pull-left">
+                                    <div class="sb-nav-link-icon"><i id="icon-size" class="fas fa-traffic-light fa-4x" style="color: black;"></i></div>
+                                </div>
+                                <div class="content pull-left">
+                                    <h4>
+                                        Congestionamento
+                                    </h4> <br>
+                                    <p style="color: gray;">Congestionamento reportado na rota FATCAMP123</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-text"><small class="text-muted">Última atualização 3 mins atrás</small></p>
+            </div>
+            <!-- app -->
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+</body>
+
+</html>

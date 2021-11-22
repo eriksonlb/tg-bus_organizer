@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - SB Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="/static/assets/css/styles.css" rel="stylesheet" />
+    <link href="/static/assets/css/index.css" rel="stylesheet" />
+    <link href="/static/assets/css/table.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b494f02d5f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+    {% include 'navbar.html' %}
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            {% include 'sidebar.html' %}
+        </div>
+        <div id="layoutSidenav_content">
+            <!-- title -->
+            <div class="row page-titles">
+                <div class="col-md-5 col-8 align-self-center">
+                    <h1 id="page-title">Veículos</h1>
+                    <br>
+                </div>
+            </div>
+
+            <!-- app -->
+            <div class="container-x2">
+                <div class="table-responsive">
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2>Veículos cadastrados</h2>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="btn btn-secondary"><i class="fa fa-plus"></i> <span>Adicionar veículo</span></a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <div class="form__group field">
+
+                                        <input type="input" class="form__field" placeholder="Digite a placa, modelo ou motorista" name="name" />
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Placa</th>
+                                    <th>Modelo</th>
+                                    <th>Motorista</th>
+                                    <th>Status</th>
+                                    <th>Ação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <a href="#">XXX-1111</a>
+                                    </td>
+                                    <td>MARCOPOLO/MARCOPOLO/VOLARE W9 ON</td>
+                                    <td>Heitor Amaral</td>
+                                    <td><span class="status text-success">&bull;</span>Ativo</td>
+                                    <td>
+                                        <a href="#" title="Editar" data-toggle="tooltip"><i class="fa fa-pen"></i></a>
+                                        <a href="#" class="delete" title="Deletar" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <a href="#">XXX-1212</a>
+                                    </td>
+                                    <td>M.BENZ /SPRINTER</td>
+                                    <td>Luciana Gonçalves</td>
+                                    <td><span class="status text-success">&bull;</span>Ativo</td>
+                                    <td>
+                                        <a href="#" title="Editar" data-toggle="tooltip"><i class="fa fa-pen"></i></a>
+                                        <a href="#" class="delete" title="Deletar" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <a href="#">XXX-1313</a>
+                                    </td>
+                                    <td>VW /VW/MPOLO SENIOR ON</td>
+                                    <td>Nicolas Mendes</td>
+                                    <td><span class="status text-danger">&bull;</span>Inativo</td>
+                                    <td>
+                                        <a href="#" title="Editar" data-toggle="tooltip"><i class="fa fa-pen"></i></a>
+                                        <a href="#" class="delete" title="Deletar" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <a href="#">XXX-1414</a>
+                                    </td>
+                                    <td>MARCOPOLO/MARCOPOLO/VOLARE DW9</td>
+                                    <td>Abner Mathias</td>
+                                    <td><span class="status text-success">&bull;</span>Ativo</td>
+                                    <td>
+                                        <a href="#" title="Editar" data-toggle="tooltip"><i class="fa fa-pen"></i></a>
+                                        <a href="#" class="delete" title="Deletar" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <a href="#">XXX-1515</a>
+                                    </td>
+                                    <td>M.BENZ /M.BENZ/MPOLO TORINO</td>
+                                    <td>Lucas Amstalden</td>
+                                    <td><span class="status text-warning">&bull;</span>Pendente</td>
+                                    <td>
+                                        <a href="#" title="Editar" data-toggle="tooltip"><i class="fa fa-pen"></i></a>
+                                        <a href="#" class="delete" title="Deletar" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="clearfix">
+                            <div class="hint-text">Mostrando <b>5</b> de <b>10</b> veículos</div>
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a href="#">Anterior</a></li>
+                                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- app -->
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+</body>
+
+</html>

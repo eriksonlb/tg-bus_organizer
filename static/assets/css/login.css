@@ -1,0 +1,24 @@
+html {
+    background-color: #00489F !important;
+    }
+
+#login-box {
+    top: 10%;
+    padding: 20px;
+    }
+
+#login-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    filter: drop-shadow(2px 0px 2px #222)
+
+}
+
+.btn {
+    width: 15%;
+    height: auto;
+    background-color: #76FABE;
+    color: #00489F;
+}
